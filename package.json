@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
-    "build": "prisma generate && prisma migrate deploy && next build",
-    "start": "next start -p $PORT",
+    "build": "next build",
+    "start": "prisma generate && prisma migrate deploy && next start -p $PORT",
     "postinstall": "prisma generate"
   },
   "dependencies": {
