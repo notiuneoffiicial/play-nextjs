@@ -6,7 +6,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "build": "next build",
-    "start": "prisma generate && prisma migrate deploy && next start -p $PORT",
+    "start": "prisma generate && (prisma migrate deploy || prisma db push) && next start -p $PORT",
     "postinstall": "prisma generate"
   },
   "dependencies": {
